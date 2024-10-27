@@ -187,6 +187,131 @@ hr{
     box-shadow:  2px 7px rgba(171, 152, 7, 0.465); /*second yellow line*/   
 }
 
+/*About Page*/
+.about-me {
+    display: flex;
+    justify-content: space-between; /* Space between topic and content */
+    align-items: center; /* Center vertically */
+    padding: 100px;
+    background-image: linear-gradient(to right,rgba(224, 181, 28, 0.579) ,rgba(192, 192, 185, 0.477));
+    border: 1px solid #f6f5f5; /* Optional */
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+}
+
+.topic2 {
+    color: #000000;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(181, 179, 174, 0.927); /* Shadow color */
+    animation: fade-in 1s ease-in forwards; /* Apply fade-in animation */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+.me{
+    width: 300px;
+    animation: mymove 2s ease-in-out forwards; 
+}
+@keyframes mymove {
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+/*Skills and education*/
+.container3 {
+    display: flex;  /* Enables flexbox for the container */
+    justify-content: space-between;  /* Space between the education and skills */
+    align-items: flex-start;  /* Align the items to the top */
+    padding: 50px;
+}
+
+.education, .skills {
+    width: 50%;  /* Make both the education and skills sections take up 45% of the container */
+}
+
+/* Styling for the list in education */
+.education li {
+    padding-top: 15px;
+    margin-bottom: 45px;  /* Adds space between each education item */
+}
+
+.education ul li span{
+    padding-bottom: 5px;
+}
+
+/* Styling for progress bars */
+.skill  {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.skill ul li{
+    padding: 10px;
+}
+
+
+/*Hobbbies*/
+.hobbies {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.hobbies-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-between; /* Spacing between items */
+    padding: 50px;
+}
+
+.hobbies-list div {
+    background-image: linear-gradient(rgba(152, 151, 151, 0.272), rgba(187, 163, 56, 0.493));
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 17px;
+    font-weight: 100;
+    border-radius: 10px;
+    transition: 0.5s, transform 0.5s;
+    flex: 210px; /* Flexible item, minimum width of 250px */
+    margin: 20px;
+    max-width: 100%; /* Ensures items don't grow too wide */
+}
+.hobbies-list div i{
+    font-size: 38px;
+    color: #808080;
+}
+
+.hobbies-list div p1 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #090909;
+    font-weight: 500;
+}
+
+.hobbies-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hobbies-list div:hover {
+    background: #ffde59aa;
+    transform: translateY(-30px);
+}
 
 /*Footer*/
 footer{
@@ -315,6 +440,32 @@ footer p i{
     .content {
         font-size: 14px;
         margin-left: 30px;
+    }
+
+/*About me*/
+    .about-me{
+        flex-direction: column;
+        line-height: 20px;
+        padding: 40px;
+    }
+    .me{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;   
+    }
+
+    .container3{
+        flex-direction: column;
+    }
+
+    .education, .skills {
+        width: 100%;  /* Make both the education and skills sections take up 45% of the container */
+    }
+    .hobbies-list div i{
+        font-size: 24px;
+    }
+    .hobbies-list div p{
+        font-size: 14px;
     }
 
 /*Footer*/
