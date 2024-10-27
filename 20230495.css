@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url(https://db.onlinewebfonts.com/c/9f5af5bd3b02c9efd39b88ea75ddad47?family=Helvetica);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Helvetica";
+    font-weight: 100;
+}
+
+/*Navigation*/
+.logo {
+    width: 230px;
+}
+
+nav {
+    display: flex;/*This will keep the logo and nav bar side by side*/
+    justify-content: space-between;/*keep the logo to tle left corner and navigation to the right corner */
+    flex-wrap: wrap;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;/*making the items to be shown horizontally*/
+    list-style: none;/*Remove the bullets*/
+}
+
+nav ul li {
+    padding-top: 15px;
+    margin: 10px 20px; /*10px-top & bottom  20px-left and right*/
+}
+
+nav ul li a {
+    color: #0e0e0e;
+    text-decoration: none; /*Removes the underline of the link*/
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    background: #141413;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/*Header*/
+.header-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s 0.5s forwards, slideIn 0.5s 0.5s forwards;
+}
+
+.header-text {
+    margin-top: 5%;
+}
+
+.header-text p4{
+    color: #000000;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-shadow: 2px 2px 2px rgba(117, 116, 112, 0.796); /* Shadow color */
+}
+
+p4 span {
+    color: #ddb61a;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.header-text p{
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/*image*/
+.girl{
+    width: 100%;
+    max-width: 600px;;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+/*social media*/
+.social-media{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.social-media a {
+    font-size: 25px;
+    margin-right: 15px;
+    color: rgb(153, 150, 150);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover {
+    color: #0b0b0b;
+    transform: translateY(-5px);
+}
+
+/*Contact me button*/
+[class*="contact-button"] {
+    background-color:#10100fc5;
+    padding:15px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 18px;
+    color: #f3f2f2;
+}
+
+.contact-button:hover{
+    background-color: #9494926d;
+    color: #000000;
+}
+
+/*Philosophy*/
+.philosophy {
+    display: flex;
+    justify-content: space-between; /* Space between topic and content */
+    align-items: center; /* Center vertically */
+    padding: 100px;
+    background-color:#ffffff;
+    margin-top:180px;
+    background-image: linear-gradient(rgba(152, 151, 151, 0.272),rgba(187, 163, 56, 0.21));
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.topic {
+    color: #000000;
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.content {
+    color: #595757;
+    border-radius: 20px;
+    font-size: 22px;
+    margin-left: 80px; /* Optional: space between topic and content */
+    font-weight: 100;
+    text-align: justify;
+}
+
+hr{
+    border-color:#808080 ;/*This provides the fallback solid color, ensuring that if the browser doesn't support RGBA, it will still display the border with this color.*/
+    border-color: rgba(222, 216, 216, 0.173);
+    box-shadow:  2px 7px rgba(171, 152, 7, 0.465); /*second yellow line*/   
+}
+
+
+/*Footer*/
+footer{
+    text-align: center;
+    line-height: 40px;
+}
+
+.logo2{
+    width: 150px;
+    display: block; /*When an element has a block display value, it will start on a new line and take up the full width available by default. This means that other elements will be pushed down or up to make room for it.*/
+    margin: auto; /*This will make the logo to be center*/
+}
+
+/*Footer social media*/
+.social-media2 a {
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 15px;
+    color: #c4a115;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media2 a:hover {
+    color: #959494;
+    transform: translateY(-5px); /*The icons will move up a little*/
+}
+
+footer ul li :first-child :hover{ 
+    color: #000000;
+
+}
+
+footer ul li {
+    display: inline-block; /*Moving all the elements horizontally*/
+    padding: 6px;
+    gap: 10px;
+}
+
+footer ul li a{
+    text-decoration: none; /*Will reomve the underline of the link*/
+    color: #716f6f;
+}
+footer ul li a:hover{
+    color: black;
+}
+
+footer > p{
+    color: #716f6fa9;
+}
+footer p i{
+    color:#ddb61a;
+}
+
+/*Responsive page*/
+@media only screen and (max-width:900px) {
+
+/*Topics*/      
+    .topic {
+        padding: 15px;
+        font-size: 21px;
+    }
+
+    .topic2{
+        font-size: 26px;
+    }
+/*nav */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 120px; /* Smaller logo size on small screens */
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust spacing between navigation items */
+    }
+
+    nav ul li a {
+        margin-right: 17px;
+        font-size: 16px; /* Adjust font size of links on smaller screens */
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 30px; /* Decrease font size on small screens */
+    }
+
+    .header-text p{
+        font-size: 16px; /* Decrease font size on small screens */
+    }
+
+    .social-media{
+        justify-content: center;
+    }
+  
+    [class*="contact-button"] {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    /*image*/
+    .girl{
+        max-width: 60%;
+        padding-top: 30px;
+    }
+ 
+/*Philosophy*/
+    .philosophy {
+        position: relative;
+        padding: 35px;
+        margin-top: 80px;
+    }
+
+    .content {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+/*Footer*/
+    .logo2{
+        display: block;
+        margin: 0 auto;
+        width: 100px;;
+    }   
+    
+    .social-media2 a {
+        font-size: 16px;
+    }
+
+    footer ul li a{
+        font-size: 16px;
+    } 
+}
