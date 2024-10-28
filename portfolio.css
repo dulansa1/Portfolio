@@ -313,6 +313,106 @@ hr{
     transform: translateY(-30px);
 }
 
+/*Projects*/
+.flex-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    animation: zoomIn 1.2s forwards;/*in here zoomIn is the animation name*/
+}
+
+@keyframes zoomIn { /*This should has the same name with the animation name*/
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.flex-item {
+    color: rgb(99, 98, 98);
+    font-size: 14px;
+    font-weight: 100;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 12px rgba(71, 57, 7, 0.247);
+    background-color: rgb(100, 100, 97); /*Fallback background*/
+    background-color: rgba(219, 215, 194, 0.204);
+}
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+h3{
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0;
+}
+
+.flex-item{
+    text-align: justify;
+}
+
+.pic{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.flex-item:hover{
+    box-shadow: 0 10px 35px rgba(26, 26, 26, 0.272);
+    transform: scale(1.05);
+}
+
+.project-container{
+    margin-top: 50px;
+    background-image:linear-gradient(rgba(216, 189, 108, 0.349),#d1ae31b1);
+}
+.project-container :nth-child(3){
+    background-color: #ffffff;
+}
+.project-container :nth-child(4){
+    background-color: #ffffff;
+}
+
+.project_description{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.topic3 {
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+.video-container {
+    text-align: center;
+    padding-left: 30px;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+}
+
+.content3 {
+    font-size: 18px;
+    color: #595757;
+    font-weight: 100;
+    margin-left: 20px;
+    text-align: justify;
+}
+
 /*Footer*/
 footer{
     text-align: center;
@@ -466,6 +566,35 @@ footer p i{
     }
     .hobbies-list div p{
         font-size: 14px;
+    }
+
+/*Projects*/
+    .flex-container {
+        justify-content: center;
+        text-align: justify;
+    }    
+    .flex-item {
+        font-size: 14px;
+    }
+    .content3{
+        font-size: 16px;
+    }
+    .topic3{
+        font-size: 18px;
+    }
+
+    .project_description {
+        flex-direction: column;
+    }
+    
+    .video-container {
+        justify-content: center;
+    }
+
+    video {
+        width: 100%;
+        max-width: 270px;
+        padding-top: 20px;
     }
 
 /*Footer*/
