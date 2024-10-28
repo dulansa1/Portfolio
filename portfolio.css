@@ -262,7 +262,6 @@ hr{
     padding: 10px;
 }
 
-
 /*Hobbbies*/
 .hobbies {
     padding: 10px 0;
@@ -313,6 +312,51 @@ hr{
     transform: translateY(-30px);
 }
 
+/*Blogs*/
+#blog-posts {
+    padding: 20px;
+
+}
+
+.blog-flex-container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-item {
+    flex: 1 1 45%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-content p{
+    font-size: 14px;
+    padding: 15px 0px;
+}
+
+.blog-pic {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #d3bb09;
+    font-weight: bold;
+}
+
 /*Projects*/
 .flex-container {
     display: flex; /* Enable Flexbox */
@@ -345,20 +389,16 @@ hr{
     background-color: rgb(100, 100, 97); /*Fallback background*/
     background-color: rgba(219, 215, 194, 0.204);
 }
-.title-container{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+
+.flex-item p{
+    font-weight: bold;
 }
 
 h3{
     font-weight: 100;
     font-size: 18px;
     margin: 0;
-}
-
-.flex-item{
-    text-align: justify;
+    padding-bottom: 10px;
 }
 
 .pic{
@@ -373,7 +413,7 @@ h3{
 
 .project-container{
     margin-top: 50px;
-    background-image:linear-gradient(rgba(216, 189, 108, 0.349),#d1ae31b1);
+    background-image:linear-gradient(rgba(229, 202, 120, 0.349),#d1ae31b1);
 }
 .project-container :nth-child(3){
     background-color: #ffffff;
