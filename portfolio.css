@@ -16,7 +16,7 @@
 }
 
 nav {
-    display: flex;/*This will keep the logo and nav bar side by side*/
+    display: flex;
     justify-content: space-between;/*keep the logo to tle left corner and navigation to the right corner */
     flex-wrap: wrap;
     padding: 10px;
@@ -231,7 +231,9 @@ hr{
 /*Skills and education*/
 h1{
     font-weight: bold;
+    font-size: 30px;
 }
+
 .container3 {
     display: flex;  /* Enables flexbox for the container */
     justify-content: space-between;  /* Space between the education and skills */
@@ -312,51 +314,6 @@ h1{
 .hobbies-list div:hover {
     background: #ffde59aa;
     transform: translateY(-30px);
-}
-
-/*Blogs*/
-.blog-posts {
-    padding: 20px;
-
-}
-
-.blog-flex-container {
-    display: flex;
-    gap: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.blog-item {
-    flex: 1 1 45%;
-    max-width: 300px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.blog-content p{
-    font-size: 14px;
-    padding: 15px 0px;
-}
-
-.blog-pic {
-    width: 100%;
-    height: auto;
-}
-
-.blog-content {
-    padding: 15px;
-}
-
-.read-more {
-    text-decoration: none;
-    color: #d3bb09;
-    font-weight: bold;
 }
 
 /*Projects*/
@@ -445,7 +402,7 @@ h3{
 
 video {
     width: 100%;
-    max-width: 400px;
+    min-width: 380px;
 }
 
 .content3 {
@@ -454,6 +411,51 @@ video {
     font-weight: 100;
     margin-left: 20px;
     text-align: justify;
+}
+
+/*Blogs*/
+.blog-posts {
+    padding: 20px;
+
+}
+
+.blog-flex-container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-item {
+    flex: 1 1 45%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-content p{
+    font-size: 14px;
+    padding: 15px 0px;
+}
+
+.blog-pic {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #d3bb09;
+    font-weight: bold;
 }
 
 /* Contact */
@@ -618,7 +620,7 @@ footer p i{
 /*Responsive page*/
 /* Smartphones (portrait and landscape) */
 @media only screen and (max-width:600px) {
-    /*Topics*/      
+/*Topics*/      
     .topic {
         padding: 15px;
         font-size: 18px;
@@ -630,6 +632,10 @@ footer p i{
 
     .topic3{
         font-size: 20px;
+    }
+
+    .topic4{
+        font-size: 50px;
     }
 
 /*nav */
@@ -678,7 +684,7 @@ footer p i{
         font-size: 14px;
     }
 
-    /*image*/
+/*image*/
     .girl{
         max-width: 60%;
         padding-top: 30px;
@@ -697,6 +703,9 @@ footer p i{
     }
 
 /*About me*/
+    h1{
+        font-size: 24px;
+    }
     .about-me{
         flex-direction: column;
         line-height: 20px;
@@ -794,7 +803,6 @@ footer p i{
 
 /* Tablets (portrait and landscape) */
 @media (min-width: 601px) and (max-width: 1024px) {
-
 /*Topics*/      
     .topic {
         padding: 15px;
