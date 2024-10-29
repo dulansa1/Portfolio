@@ -72,7 +72,7 @@ nav ul li a:hover::after {
     margin-top: 5%;
 }
 
-.header-text p4{
+.topic4{
     color: #000000;
     margin-top: 40px;
     font-size: 60px;
@@ -81,17 +81,15 @@ nav ul li a:hover::after {
     text-shadow: 2px 2px 2px rgba(117, 116, 112, 0.796); /* Shadow color */
 }
 
-p4 span {
+.topic4 span {
     color: #ddb61a;
-    padding-left: 20px;
     font-weight: bold;
-
 }
 
 .header-text p{
     padding-left: 20px;
     padding-top: 15px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
 }
 
@@ -115,7 +113,7 @@ p4 span {
 .social-media{
     display: flex;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin: 30px 0px;
     padding-left: 20px;
 }
 
@@ -134,12 +132,12 @@ p4 span {
 
 /*Contact me button*/
 [class*="contact-button"] {
-    background-color:#10100fc5;
+    background-color:#10100fc6;
+    text-decoration: none;
     padding:15px 20px;
     border: none;
     cursor: pointer;
     margin: 20px;
-    margin-top: 30px;
     border-radius: 10px;
     font-weight: 100;
     font-size: 18px;
@@ -147,7 +145,7 @@ p4 span {
 }
 
 .contact-button:hover{
-    background-color: #9494926d;
+    background-color: #94949298;
     color: #000000;
 }
 
@@ -231,6 +229,9 @@ hr{
 }
 
 /*Skills and education*/
+h1{
+    font-weight: bold;
+}
 .container3 {
     display: flex;  /* Enables flexbox for the container */
     justify-content: space-between;  /* Space between the education and skills */
@@ -288,12 +289,13 @@ hr{
     margin: 20px;
     max-width: 100%; /* Ensures items don't grow too wide */
 }
+
 .hobbies-list div i{
     font-size: 38px;
     color: #808080;
 }
 
-.hobbies-list div p1 {
+.hobbies-list .hobbies-topic {
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -313,7 +315,7 @@ hr{
 }
 
 /*Blogs*/
-#blog-posts {
+.blog-posts {
     padding: 20px;
 
 }
@@ -431,6 +433,7 @@ h3{
 .topic3 {
     flex-basis: 100%;
     padding: 20px;
+    font-size: 24px;
 }
 
 .video-container {
@@ -451,6 +454,113 @@ video {
     font-weight: 100;
     margin-left: 20px;
     text-align: justify;
+}
+
+/* Contact */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0 50px;
+}
+
+.form-section, .contact-details {
+    width: 44%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ceab0ee7;
+    color: #fffbfb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ceab0e9e;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.google{
+    color: #000000;
+}
+.contact-details p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.input{
+    border: 1px solid #808080;
+}
+/* When input is valid (pseudo-class for validation) */
+.input:valid {
+    border-color: #10c510;
+}
+
+/* When input is invalid */
+.input:invalid {
+    border-color: rgb(206, 201, 201);
+}
+
+a[href ^="https"]{       /*Attribute selector -This will remove the underline in all the links with https in here it's https*/
+    text-decoration: none;
+} 
+
+.download-cv {
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #777879;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: #77787998;
+}
+
+.contact-details img{
+    width: 400px;
+    animation: move 2s ease-in forwards; 
+}
+@keyframes move {
+    0% {
+        transform: translateX(100%);/*Moves from right (If you want to moves the image from left then put (minus)-100% */
+    }
+    100% {
+        transform: translateX(0); 
+    }
 }
 
 /*Footer*/
@@ -480,9 +590,8 @@ footer{
     transform: translateY(-5px); /*The icons will move up a little*/
 }
 
-footer ul li :first-child :hover{ 
+footer ul li :hover{ 
     color: #000000;
-
 }
 
 footer ul li {
@@ -507,17 +616,22 @@ footer p i{
 }
 
 /*Responsive page*/
-@media only screen and (max-width:900px) {
-
-/*Topics*/      
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width:600px) {
+    /*Topics*/      
     .topic {
         padding: 15px;
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .topic2{
-        font-size: 26px;
+        font-size: 30px;
     }
+
+    .topic3{
+        font-size: 20px;
+    }
+
 /*nav */
     nav {
         flex-direction: column;
@@ -525,7 +639,7 @@ footer p i{
     }
 
     .logo {
-        width: 120px; /* Smaller logo size on small screens */
+        width: 200px; /* Smaller logo size on small screens */
     }
 
     nav ul {
@@ -539,7 +653,7 @@ footer p i{
 
     nav ul li a {
         margin-right: 17px;
-        font-size: 16px; /* Adjust font size of links on smaller screens */
+        font-size: 15px; 
     }
 
     .header-content {
@@ -547,12 +661,12 @@ footer p i{
         text-align: center;
     }
 
-    h2{
-        font-size: 30px; /* Decrease font size on small screens */
+    .header-text p4{
+        font-size: 40px;
     }
 
     .header-text p{
-        font-size: 16px; /* Decrease font size on small screens */
+        font-size: 14px; 
     }
 
     .social-media{
@@ -592,6 +706,184 @@ footer p i{
         width: 200px;
         height: 200px;
         margin-bottom: 30px;   
+        animation: zoomIn 1.2s forwards;/*in here zoomIn is the animation name*/
+    }
+
+    .container3{
+        flex-direction: column;
+    }
+
+    .education, .skills {
+        width: 100%;  /* Make both the education and skills sections take up 45% of the container */
+    }
+    .hobbies-list div i{
+        font-size: 24px;
+    }
+
+    .hobbies-list div p1{
+        font-size: 20px;
+    }
+
+    .hobbies-list div p{
+        font-size: 14px;
+    }
+
+/*Projects*/
+    .flex-container {
+        justify-content: center;
+        text-align: justify;
+    }    
+    .content3{
+        font-size: 14px;
+    }
+
+    .project_description {
+        flex-direction: column;
+    }
+    
+    .video-container {
+        justify-content: center;
+    }
+
+    video {
+        width: 100%;
+        max-width: 270px;
+        padding-top: 20px;
+    }
+
+/*Contact form*/
+    .container {
+        margin-top: 0;
+        padding: 0 30px;
+    }   
+    
+    .form-section, .contact-details {
+        width: 90%;
+        padding: 0;
+    }
+
+    .contact-details {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        align-items: end;
+    }
+    .contact-details img{
+        width: 300px;
+    }
+
+/*Footer*/
+    .logo2{
+        display: block;
+        margin: 0 auto;
+        width: 100px;;
+    }   
+    
+    .social-media2 a {
+        font-size: 16px;
+    }
+
+    footer ul li a{
+        font-size: 12px;
+    } 
+
+    footer p{
+        font-size: 11px;
+    }
+}
+
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+/*Topics*/      
+    .topic {
+        padding: 15px;
+        font-size: 24px;
+    }
+
+    .topic2{
+        font-size: 34px;
+    }
+
+    .topic3{
+        font-size: 18px;
+    }
+
+    .topic4{
+        font-size: 50px;
+    }
+
+/*nav */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 180px; /* Smaller logo size on small screens */
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        gap: 20px; /* Adjust spacing between navigation items */
+    }
+
+    nav ul li a {
+        margin-right: 17px;
+        font-size: 18px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text p{
+        font-size: 18px;
+    }
+
+    .social-media{
+        justify-content: center;
+    }
+  
+    [class*="contact-button"] {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    /*image*/
+    .girl{
+        max-width: 60%;
+        padding-top: 30px;
+    }
+ 
+/*Philosophy*/
+    .philosophy {
+        position: relative;
+        padding: 35px;
+        margin-top: 80px;
+    }
+
+    .content {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+/*About me*/
+    .about-me{
+        flex-direction: column;
+        line-height: 20px;
+        padding: 40px;
+    }
+    .me{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;   
+        animation: zoomIn 1.2s forwards;/*in here zoomIn is the animation name*/
     }
 
     .container3{
@@ -613,14 +905,9 @@ footer p i{
         justify-content: center;
         text-align: justify;
     }    
-    .flex-item {
-        font-size: 14px;
-    }
+
     .content3{
         font-size: 16px;
-    }
-    .topic3{
-        font-size: 18px;
     }
 
     .project_description {
@@ -635,6 +922,26 @@ footer p i{
         width: 100%;
         max-width: 270px;
         padding-top: 20px;
+    }
+
+/*Contact form*/
+    .container {
+        margin-top: 0;
+        padding: 0 30px;
+    }   
+    
+    .form-section, .contact-details {
+        width: 90%;
+        padding: 0;
+    }
+
+    .contact-details {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        align-items: end;
+    }
+    .contact-details img{
+        width: 300px;
     }
 
 /*Footer*/
@@ -652,3 +959,5 @@ footer p i{
         font-size: 16px;
     } 
 }
+
+
