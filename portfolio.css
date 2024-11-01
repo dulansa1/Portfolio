@@ -218,10 +218,9 @@ h1{
     width: 45%;  
 }
 
-/* Styling for the list in education */
 .education li {
     padding-top: 15px;
-    margin-bottom: 45px;  /* Adds space between each education item */
+    margin-bottom: 45px;  
 }
 
 .education ul li span{
@@ -246,7 +245,7 @@ h1{
 .hobbies-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Spacing between items */
+    justify-content: space-between; 
     padding: 50px;
 }
 
@@ -259,9 +258,9 @@ h1{
     font-weight: 100;
     border-radius: 10px;
     transition: 0.5s, transform 0.5s;
-    flex: 210px; /* Flexible item, minimum width of 250px */
+    flex: 210px; 
     margin: 20px;
-    max-width: 100%; /* Ensures items don't grow too wide */
+    max-width: 100%; 
 }
 
 .hobbies-list div i{
@@ -282,7 +281,7 @@ h1{
     font-weight: 500;
     margin-bottom: 15px;
 }
-
+/*User action*/
 .hobbies-list div:hover {
     background: #ffde59aa;
     transform: translateY(-30px);
@@ -332,6 +331,7 @@ h2:not(.topic2){
     height: auto;
     border-radius: 8px;
 }
+
 .flex-item:hover{
     box-shadow: 0 10px 35px rgba(26, 26, 26, 0.272);
     transform: scale(1.05);
@@ -369,7 +369,7 @@ h2:not(.topic2){
     margin-bottom: 20px;
 }
 
-video {
+.video {
     width: 100%;
     min-width: 380px;
 }
@@ -506,7 +506,7 @@ input[type=email]:focus:invalid {
     border-color: #ff0000;
 }
 
-a[href ^="https"]{       /*Attribute selector -This will remove the underline in all the links with https in here it's https*/
+a[href ^="https"]{       
     text-decoration: none;
 } 
 
@@ -539,8 +539,8 @@ footer{
 
 .logo2{
     width: 150px;
-    display: block; /*When an element has a block display value, it will start on a new line and take up the full width available by default. This means that other elements will be pushed down or up to make room for it.*/
-    margin: auto; /*This will make the logo to be center*/
+    display: block; 
+    margin: auto; 
 }
 
 /*Footer social media*/
@@ -555,7 +555,7 @@ footer{
 
 .social-media2 a:hover {
     color: #959494;
-    transform: translateY(-5px); /*The icons will move up a little*/
+    transform: translateY(-5px); 
 }
 
 footer ul li :hover{ 
@@ -563,13 +563,13 @@ footer ul li :hover{
 }
 
 footer ul li {
-    display: inline-block; /*Moving all the elements horizontally*/
+    display: inline-block; 
     padding: 6px;
     gap: 10px;
 }
 
 footer ul li a{
-    text-decoration: none; /*Will reomve the underline of the link*/
+    text-decoration: none; 
     color: #716f6f;
 }
 footer ul li a:hover{
@@ -615,7 +615,7 @@ footer p i{
 
 @keyframes move {
     0% {
-        transform: translateX(100%);/*Moves from right (If you want to moves the image from left then put (minus)-100% */
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(0); 
@@ -659,7 +659,7 @@ footer p i{
     }
 
     nav ul li {
-        margin: 5px 0; /* Adjust spacing between navigation items */
+        margin: 5px 0; 
     }
 
     nav ul li a {
@@ -714,7 +714,7 @@ footer p i{
         width: 200px;
         height: 200px;
         margin-bottom: 30px;   
-        animation: zoomIn 1.2s forwards;/*in here zoomIn is the animation name*/
+        animation: zoomIn 1.2s forwards;
     }
 
     .container3{
@@ -722,7 +722,7 @@ footer p i{
     }
 
     .education, .skills {
-        width: 100%;  /* Make both the education and skills sections take up 45% of the container */
+        width: 100%;  
     }
     .hobbies-list div i{
         font-size: 24px;
@@ -748,9 +748,10 @@ footer p i{
 
     video {
         width: 100%;
-        max-width: 270px;
+        max-width: 300px;
         padding-top: 20px;
     }
+
 
 /*Contact form*/
     .container {
@@ -823,7 +824,7 @@ footer p i{
     }
 
     .logo {
-        width: 180px; /* Smaller logo size on small screens */
+        width: 180px; 
     }
 
     nav ul {
@@ -832,7 +833,7 @@ footer p i{
     }
 
     nav ul li {
-        gap: 20px; /* Adjust spacing between navigation items */
+        gap: 20px; 
     }
 
     nav ul li a {
@@ -879,7 +880,7 @@ footer p i{
         width: 200px;
         height: 200px;
         margin-bottom: 30px;   
-        animation: zoomIn 1.2s forwards;/*in here zoomIn is the animation name*/
+        animation: zoomIn 1.2s forwards;
     }
 
     .container3{
@@ -887,7 +888,7 @@ footer p i{
     }
 
     .education, .skills {
-        width: 100%;  /* Make both the education and skills sections take up 45% of the container */
+        width: 100%;  
     }
     .hobbies-list div i{
         font-size: 24px;
@@ -911,7 +912,7 @@ footer p i{
 
     video {
         width: 100%;
-        max-width: 270px;
+        max-width: 400px;
         padding-top: 20px;
     }
 
